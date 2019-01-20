@@ -1,0 +1,488 @@
+/* Global */
+.App {
+  font-family: Calibri;
+  background: #ececec;
+
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+.text-container {
+  width: 70%;
+  margin: 20px auto;
+  padding: 16px;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+/* Header */
+header {
+  background-color: #dbdbdb;
+  opacity: .90;
+  min-height: 70px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+header .containter {
+  transition: all .5s ease-in-out;
+}
+
+#logo {
+  float: left;
+}
+
+#logo img {
+  height: 80px;
+  width: 80px;
+}
+
+nav {
+  float: right;
+  padding-right: 16px;
+}
+
+nav ul {
+  padding-left: 5px;
+}
+
+nav li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.contact-icons {
+  float: right;
+  padding: 16px 20px;
+  align-items: baseline;
+}
+
+.contact-icons img {
+  height: 50px;
+  width: 50px;
+  padding: 8px 8px;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+header img {
+  height: 40px;
+  width: 40px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 5px;
+}
+
+/* Showcase */
+
+#showcase {
+  display: flex;
+  justify-content: space-evenly;
+  background: white;
+}
+
+#showcase img {
+  width: 83%;
+  height: 550px;
+  margin-top: 11vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12vh;
+  align-items: center;
+}
+
+.name h1 {
+  font-size: 58px;
+  text-align: center;
+  font-weight: 350;
+}
+
+.name p { 
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 24px;
+}
+
+.name {
+  background-color: rgb(167, 167, 167);
+  height: 130px;
+  width: 93%;
+  opacity: 0.9;
+  border-radius: 4px;
+  color: white;
+}
+
+/* Profile*/
+
+/* About */
+.about {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+/* Technologies */
+
+.technologies {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.technology-section {
+  width: 275px;
+  margin: 16px 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.technology-section h3 {
+  margin-top: 10px;
+}
+
+.technologies img {
+  height: 60px;
+  width: 60px;
+  margin: 5px 5px;
+}
+
+/* Projects */
+h2.projects.h2 {
+  margin: 20px auto;
+}
+
+figure {
+  width: 100%;
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project {
+  text-align: center;
+  padding: 16px 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.project img {
+  border-radius: 20px;
+  width: 45%;
+  height: 50%;
+}
+
+.project-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.project-buttons img {
+  margin: 8px;
+  width: 35px;
+  height: 35px;
+}
+
+.caption {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-button {
+  border: gray;
+  border-radius: 8px;
+}
+
+.shaleApps-images{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shaleApps-images img {
+  width: 45%;
+  height: 550px;
+}
+
+.ui.image {
+  position: inherit;
+}
+
+.shaleApps-images img:hover{
+  cursor: pointer;
+}
+
+
+div.ui.modal.transition.visible.active {
+  width: 75%;
+}
+
+
+/* contact */
+
+.contact-container {
+  width: 100%;
+  background: white;
+}
+
+.contact-container p {
+  margin: -3px 0;
+}
+
+/* Media Queries */
+
+@media(max-width: 1050px) {
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: white;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .shaleApps-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img.ui.image {
+    display: block;
+    align-items: center;
+    width: 85%;
+  }
+
+  .ui.image {
+    position: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+}
+
+@media(max-width: 900px) {
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: white;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .shaleApps-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img.ui.image {
+    display: block;
+    align-items: center;
+    width: 85%;
+  }
+
+  .ui.image {
+    position: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+}
+
+@media(max-width: 800px) {
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: white;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .shaleApps-images img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img.ui.image {
+    display: block;
+    align-items: center;
+    width: 85%;
+  }
+
+  .ui.image {
+    position: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+}
+
+@media(max-width: 600px) {
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: white;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+
+  .shaleApps-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img.ui.image {
+    display: block;
+    align-items: center;
+    width: 85%;
+  }
+
+  .ui.image {
+    position: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+}
+
+@media(max-width: 450px) {
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: white;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+
+  .shaleApps-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img.ui.image {
+    display: block;
+    align-items: center;
+    width: 85%;
+  }
+
+  .ui.image {
+    position: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+}
+
+@media(max-width: 400px) {
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: white;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .shaleApps-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img.ui.image {
+    display: block;
+    align-items: center;
+    width: 85%;
+  }
+
+  .ui.image {
+    position: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+}
+
+@media(max-width: 350px) {
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: white;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .shaleApps-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img.ui.image {
+    display: block;
+    align-items: center;
+    width: 85%;
+  }
+
+  .ui.image {
+    position: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+}
